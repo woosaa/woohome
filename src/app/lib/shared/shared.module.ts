@@ -6,7 +6,7 @@ import { ToolbarModule } from '../components/toolbar/toolbar.module';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, MaterialModule, ToolbarModule],  
-  exports: [CommonModule, MaterialModule, ToolbarModule]
+  imports: [CommonModule, MaterialModule],  
+  exports: [CommonModule, MaterialModule]
 })
 export class SharedModule {}
