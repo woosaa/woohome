@@ -1,8 +1,10 @@
 import { Component, OnInit } from "@angular/core";
+import { levelChooserFabAnimations } from "./level-chooser.animations";
 
 @Component({
   selector: "app-level-chooser",
   templateUrl: "./level-chooser.component.html",
+  animations: [levelChooserFabAnimations],
   styleUrls: ["./level-chooser.component.scss"]
 })
 export class LevelChooserComponent {

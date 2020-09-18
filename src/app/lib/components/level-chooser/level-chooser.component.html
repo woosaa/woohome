@@ -1,9 +1,9 @@
 <div class="fab-container">
   <button mat-fab class="fab-toggler"
           (click)="onToggleFab()">
-    <i class="material-icons">add</i>
+    <i class="material-icons" [@fabToggler]="{value: fabTogglerState}">add</i> <!-- Animation here -->
   </button>
-  <div>
+  <div [@levelChooserStagger]="buttons.length"> <!-- and here -->
     <button *ngFor="let btn of buttons"
             mat-mini-fab
             class="fab-secondary"
